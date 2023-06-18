@@ -6,33 +6,19 @@ If you are very familiar with Raspberry Pi and audio hat setting. You could foll
 
 ### 1.System Image Download link
 
-rAudio:
-
 [rAudio Image  download](https://github.com/rern/rAudio/releases)
-
-Volumio:
 
 [Volumio image download](http://volumio.org/get-started/)
 
-MoOde:
+[MoOde image download](http://www.moodeaudio.org/)
 
- [MoOde image download](http://www.moodeaudio.org/)
+[Raspbian and Raspbian image download](https://www.raspberrypi.com/software/operating-systems/)
 
-Raspbian and Raspbian lite:
+[LibreELEC image download](https://libreelec.tv/downloads/raspberry/)
 
- [Raspbian and Raspbian image download](https://www.raspberrypi.com/software/operating-systems/)
+[Max2Play image download](https://www.max2play.com/en/max2play-image/)
 
-LibreELEC:
-
- [LibreELEC image download](***\*https://libreelec.tv/downloads/raspberry/\****)
-
-Max2Play:
-
- [Max2Play image download](***\*https://www.max2play.com/en/max2play-image/\****)
-
-OSMC:
-
- [OSMC image download]([***\*https://osmc.tv/download/\****](https://osmc.tv/download/))
+[OSMC image download](https://osmc.tv/download/)
 
 ### 2.rAudio Setup
 
