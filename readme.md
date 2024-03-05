@@ -117,3 +117,15 @@ Change a better 5V power supply. The inferior power supply will limits you to pu
 **2.Hotspot**
 
 Some music system open the Raspberry Pi build-in hotspot default. But the 3.5 mm jacks will be an antenna and received the interference signal from the WIFI module. So use wired network instead of the Raspberry Pi build-in WIFI can help you cut noise pollution completely. Esp the build-in WIFI be used as wireless hotspot.
+
+### 8.Support For Raspberry Pi5
+
+Currently needed to do as below methods to use DAC Pro under Raspberry Pi 5.
+
+1.Download the matched dtbo file for your system from our GitHub link
+
+2.Use a card reader on your computer to open the TF card that has already been flashed with the system."
+
+3.Copy and replace the corresponding dtbo file in the **overlays** folder within the **boot** drive.
+
+4.Save and exit the TF card, then follow the above setup steps to configure the audio output driver for normal use.
