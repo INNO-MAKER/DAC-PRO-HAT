@@ -1,4 +1,4 @@
-## DAC PRO Quick Start:
+## DAC Pro Quick Start:
 
 If you are very familiar with Raspberry Pi and audio hat setting. You could follow below quick start steps，otherwise read the user manual firstly.
 
@@ -26,7 +26,7 @@ Setting→System→GPIO Devices→Audio-I2S→**Allo Katana DAC**→reboot.
 
 ### 3.Volumio Setup
 
-Output→Selectyour i2s DAC→**Allo Katana DAC**→reboot
+Audio Output→I2S DAC→ **On**→DAC Model→**Allo Katana DAC** or **Innomaker Dac Pro**→reboot
 
 ### 4.MoOde Setup
 
@@ -120,7 +120,7 @@ Some music system open the Raspberry Pi build-in hotspot default. But the 3.5 mm
 
 ### 8.Support For Raspberry Pi5
 
-Currently needed to do as below methods to use DAC Pro under Raspberry Pi 5.
+Currently needed to do as below steps to use DAC Pro under Raspberry Pi 5.
 
 1.Download the matched dtbo file for your system from our GitHub link
 
