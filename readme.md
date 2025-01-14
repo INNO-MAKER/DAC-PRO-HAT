@@ -120,12 +120,12 @@ Some music system open the Raspberry Pi build-in hotspot default. But the 3.5 mm
 
 ### 8.Support For Raspberry Pi5
 
-Currently needed to do as below steps to use DAC Pro under Raspberry Pi 5.
+It works fine on Pi5 currently, just follow the operation steps for each system as outlined above. However, there were issues in certain kernel versions (2-3 versions) shortly after the release of Pi5. If you absolutely need to use these intermediate versions, please follow the steps below：
 
-1.Download the matched dtbo file for your system from our GitHub link
+1. Download the matched dtbo file for your system from our GitHub link
 
-2.Use a card reader on your computer to open the TF card that has already been flashed with the system."
+2. Use a card reader on your computer to open the TF card that has already been flashed with the system.
 
-3.Copy and replace the corresponding dtbo file in the **overlays** folder within the **boot** drive.
+3. Copy and replace the corresponding dtbo file in the **overlays** folder within the **boot** drive.
 
-4.Save and exit the TF card, then follow the above setup steps to configure the audio output driver for normal use.
+4. Save and exit the TF card, then follow the above setup steps to configure the audio output driver for normal use.
