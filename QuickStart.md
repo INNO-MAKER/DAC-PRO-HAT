@@ -157,3 +157,11 @@ It works fine on Pi5 currently, just follow the operation steps for each system 
 3. Copy and replace the corresponding dtbo file in the **overlays** folder within the **boot** drive.
 
 4. Save and exit the TF card, then follow the above setup steps to configure the audio output driver for normal use.
+
+
+
+
+
+​                                                                                                                                                                                            Author : Calvin （calvin@inno-maker.com）
+
+​                                                                                                                                                                                           Support: support@inno-maker.com
