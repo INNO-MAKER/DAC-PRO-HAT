@@ -1,10 +1,32 @@
-## DAC Pro Quick Start:
+## DAC PRO Quick Start:
 
 If you are very familiar with Raspberry Pi and audio hat setting. You could follow below quick start steps，otherwise read the user manual firstly.
 
+### 1. Hardware Connection
+
+#### 1.1 Power Supply
+
+1.1.1 Power Jumper
+
+Next to the USB Type-C port on the DAC PRO board, there is a black jumper cap. When this jumper is inserted, the 5V power supply between the DAC PRO and the Raspberry Pi becomes connected. At this point, there are three possible power input options:
+
+​    (1) Supplying 5V via the Type-C port on the DAC PRO
+
+​    (2) Supplying 5V via the green terminal block on the DAC PRO
+
+​    (3) Supplying 5V to the Raspberry Pi mainboard
+
+Supplying power to any one of these three interfaces will allow both the Raspberry Pi and the DAC PRO to function normally. Do not supply power to two or more of these interfaces at the same time, as differences in voltage between the interfaces may damage the DAC PRO and the Raspberry Pi
+
+If the jumper cap is removed, the 5V power connection between the Raspberry Pi and the DAC PRO will be disconnected, and they will need to be powered separately. The DAC PRO's power supply will no longer be affected by the Raspberry Pi.
+
+At this point, you must provide a 5V/500mA power supply to either the green terminal block or the Type-C port on the DAC PRO ,only one of them should be used, not both at the same time. The Raspberry Pi should be powered separately via its own Type-C port with a dedicated 5V power source.
 
 
-### 1.System Image Download link
+
+### 2. Software
+
+#### 2.1 System Image Download link
 
 [rAudio Image  download](https://github.com/rern/rAudio/releases)
 
@@ -20,23 +42,29 @@ If you are very familiar with Raspberry Pi and audio hat setting. You could foll
 
 [OSMC image download](https://osmc.tv/download/)
 
-### 2.rAudio Setup
+#### 2.2.rAudio Setup
 
 Setting→System→GPIO Devices→Audio-I2S→**Allo Katana DAC**→reboot.
 
-### 3.Volumio Setup
+#### 2.3.Volumio Setup
 
 Audio Output→I2S DAC→ **On**→DAC Model→**Allo Katana DAC** or **Innomaker Dac Pro**→reboot
 
-### 4.MoOde Setup
+#### 2.4.MoOde Setup
 
 Configure→Audio→Output device → **I2S audio device**
 
 Configure→Audio→Named I2S device→**Allo Katana DAC**
 
-### 5.Raspbian and Raspbian Lite Setup
+#### 2.5.Raspbian and Raspbian Lite Setup
 
-1.Open  the config.txt on terminal viia nano tools.
+1.Open  the config.txt on terminal via nano tools.
+
+```
+sudo nano /boot/firmware/config.txt
+```
+
+Legacy version system：
 
 ```
 sudo nano /boot/config.txt
@@ -94,7 +122,7 @@ clt.!default{
 alsamixer
 ```
 
-### 6.LibreELEC Setup                            
+#### 2.6.LibreELEC Setup                            
 
 1.Modify the config.txt on LibreELEC image card.Append the following lines to the end of the file.
 
@@ -106,15 +134,15 @@ dtoverlay=allo-katana-dac-audio
 
 
 
-### 7.Pops and Crackles Soluations
+### 3.Pops and Crackles Soluations
 
-Some customers said that there are some pops and crackles when play music over our dac module, but no problem over with HDMI of Raspberry Pi. Please try below solutions.
+Some customers said that there are some pops and crackles when play music over our DAC PRO module, but no problem over with HDMI of Raspberry Pi. Please try below solutions.
 
-**1.Power supply**
+#### 3.1Power supply
 
-Change a better 5V power supply. The inferior power supply will limits you to pursue the better  audio quality. The battery pack linear power supply is a better choice. 
+Change a better 5V power supply. The inferior power supply will limits you to pursue the better  audio quality. The battery pack linear power supply is a better choice.  
 
-**2.Hotspot**
+#### **3.2 Hotspot**
 
 Some music system open the Raspberry Pi build-in hotspot default. But the 3.5 mm jacks will be an antenna and received the interference signal from the WIFI module. So use wired network instead of the Raspberry Pi build-in WIFI can help you cut noise pollution completely. Esp the build-in WIFI be used as wireless hotspot.
 
